@@ -129,7 +129,7 @@ function addera(){
 		e = parseFloat(e) * parseFloat(mult);
 		d = parseFloat(e) + parseFloat(d);
 		console.log(d);
-		document.getElementById((x+mottagare*b)).value = d;
+		document.getElementById((x+mottagare*b)).value = d.toPrecision(3);
 	}
 }
 function multi(){
@@ -140,7 +140,7 @@ function multi(){
 	var d = 0;
 	for(x=0; x<b; x++){
 		d = document.getElementById((x+givare*b)).value;
-		document.getElementById((x+givare*b)).value = parseFloat(d) * parseFloat(mult);
+		document.getElementById((x+givare*b)).value = (parseFloat(d) * parseFloat(mult)).toPrecision(3);
 	}
 }
 function divi(){
@@ -150,6 +150,6 @@ function divi(){
 	var d = 0;
 	for(x=0; x<b; x++){
 		d = document.getElementById((x+givare*b)).value;
-		document.getElementById((x+givare*b)).value = parseFloat(d) / parseFloat(mult);
+		document.getElementById((x+givare*b)).value = (parseFloat(d) / parseFloat(mult)).toPrecision(3);
 	}
 }

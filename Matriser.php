@@ -4,6 +4,9 @@
 ?>
 <style>
 p{ margin: 0px;}
+body{ background-color: brown;}
+input{background-color: lightgrey;}
+
 </style>
 <body id="body">
 <p>Skapa Matris</p>
